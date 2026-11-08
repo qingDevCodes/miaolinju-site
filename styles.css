@@ -16,6 +16,9 @@ nav a { color: var(--ink); }
 h1, h2, .tagline { font-family: "Songti SC", "STSong", "SimSun", serif; }
 h1 { font-size: clamp(60px, 7vw, 88px); line-height: 1.15; margin: 15px 0 28px; letter-spacing: .05em; }
 .tagline { font-size: clamp(27px, 3.5vw, 40px); line-height: 1.5; margin: 0 0 26px; }
+.hero-cover { margin: 0 0 24px; }
+.hero-cover img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 4px; }
+.hero-cover figcaption { margin-top: 9px; color: #665a50; font-size: 12px; line-height: 1.6; }
 .intro { font-size: 18px; max-width: 440px; }
 .medium { font-size: 14px; margin: 20px 0 28px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 28px; background: var(--rust); color: #fff; padding: 10px 21px; border: 1px solid var(--rust); border-radius: 4px; text-decoration: none; font-weight: 600; min-height: 46px; }

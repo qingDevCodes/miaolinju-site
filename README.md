@@ -5,7 +5,7 @@
 - 网站：https://qingdevcodes.github.io/miaolinju-site/
 - 公开仓：https://github.com/qingDevCodes/miaolinju-site
 - 微信小游戏 AppID：`wx99f30143ac9176d0`；线上版本：`2.0.0`。
-- 状态核对日期：2026-11-06。微信名称搜索目前受限，可尝试正式码；能否进入以微信实际提示为准。
+- 状态核对日期：2026-11-08。微信认证已通过；名称搜索是否恢复请以微信内实测为准。可尝试正式码，能否进入以微信实际提示为准。
 
 ## 本地复现
 
@@ -33,7 +33,11 @@ python3 -m http.server 8080
 
 截图真实性依据既有上架材料记录，并逐张目检。**本地版本画面，未核实与线上 2.0.0 一致，实际以微信内为准。** 不将其标作线上版本实机验收。简介复用 2026-11-06 方案中的后台简介，不额外承诺未核实功能。
 
-正式码存在不保证所有账号可进入。本人仍需用管理员与非管理员微信扫码检查，并验证大陆手机访问；本网页可访问不代表微信扫码成功或名称搜索恢复。
+图标 `assets/icon-512.png` 原样复制自游戏仓公开宣传素材 `docs/launch/assets/icon-512.png`。`assets/apple-touch-icon.png` 与根目录 `favicon.ico` 由该图标等比缩放生成。
+
+`assets/og-cover-1200x630.png` 是 1200×630 的站外分享封面，由上述图标和真实本地截图 `screenshot-game.png` 排版合成，没有生成、重绘或补造游戏内容。它同时作为首页英雄区主视觉；其中截图仍属于本地版本材料，不是线上 2.0.0 专属实机截图。
+
+微信认证已于 2026-11-08 通过，但认证成功不等于名称搜索限制、分享能力或最终备案状态已经自动恢复。正式码存在不保证所有账号可进入。本人仍需用管理员与非管理员微信扫码检查，并验证大陆手机访问；本网页可访问不代表微信扫码成功或名称搜索恢复。
 
 ## Pages 发布与检查
 
@@ -46,6 +50,10 @@ git push origin main
 gh api repos/qingDevCodes/miaolinju-site/pages
 gh api repos/qingDevCodes/miaolinju-site/pages/builds/latest
 curl -I https://qingdevcodes.github.io/miaolinju-site/
+curl -I https://qingdevcodes.github.io/miaolinju-site/assets/og-cover-1200x630.png
+curl -I https://qingdevcodes.github.io/miaolinju-site/favicon.ico
+curl -I https://qingdevcodes.github.io/miaolinju-site/assets/apple-touch-icon.png
+curl -I https://qingdevcodes.github.io/miaolinju-site/assets/icon-512.png
 curl -I https://qingdevcodes.github.io/miaolinju-site/assets/qrcode.png
 ```
 
